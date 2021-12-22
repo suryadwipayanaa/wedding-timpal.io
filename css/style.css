@@ -1,0 +1,1969 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Corinthia&family=EB+Garamond:wght@400;500;600;700&family=Imperial+Script&family=Love+Light&family=Luxurious+Script&family=Montserrat:wght@300&family=Nanum+Brush+Script&family=Poppins:wght@300;400;500;600&family=Style+Script&family=Twinkle+Star&display=swap');
+
+/* style setting manual color */
+
+:root{
+    --cream:rgb(205, 213, 189);
+    --black:rgb(52, 57, 44);
+    --white:rgb(255, 255, 255);
+    --border-rgb:rgba(18,83,144,.5);
+    --border:rgb(18,83,144);
+
+    --font-standart:'EB Garamond', serif;
+    --font-hias :'Style Script', cursive;
+    --font-hias-2:'Style Script', cursive;
+    --font-biasa:'Poppins', sans-serif;
+
+    --font-small: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: bold;
+}
+
+
+
+/* akhir style manual color */
+
+
+/* style awal body */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+body p{
+    color: var(--border);
+}
+
+body h1{
+    color: var(--border);
+}
+
+h1 { font-family: "Brush Script MT", cursive; font-style: normal; font-variant: normal; font-weight: 700;} h3 { font-family: "Brush Script MT", cursive; font-style: normal; font-variant: normal; font-weight: 700; } p { font-family: "Brush Script MT", cursive; font-style: normal; font-variant: normal; font-weight: 400; } blockquote { font-family: "Brush Script MT", cursive; font-style: normal; font-variant: normal; font-weight: 400;  } pre { font-family: "Brush Script MT", cursive; font-style: normal; font-variant: normal; font-weight: 400;}
+
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    z-index: 999999999;
+    background-color: var(--white);
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 1s ease all;
+}
+
+.navbar.navbarr{
+    opacity: 1;
+}
+
+.navbar .container{
+    text-align: center;
+}
+
+.navbar .container .box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar .container .box p{
+    font-family: var(--font-hias-2);
+    font-size: 1.3em;
+}
+
+.navbar .container .box a{
+    text-decoration: none;
+}
+
+.navbar .fa-gifts , .fa-book-reader , .fa-edit , .fa-photo-video , .fa-gratipay{
+    color: var(--border);
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+
+.wedding{
+    max-width: 620px;
+    padding: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-image: url(../gambar/bg.png); */
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.header .container .gambar1{
+    width: 60%;
+    position: absolute;
+    top: -30px;
+    right: -90px;
+    transform: rotate(80deg);
+}
+
+.header .container .gambar1 img{
+    width: 100%;
+}
+
+.header .container .gambar2{
+    width: 60%;
+    position: absolute;
+    top: -57px;
+    left: -57px;
+}
+
+.header .container .gambar2 img{
+    width: 100%;
+}
+
+.header .container .border{
+   width: 60%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.header .container .border img{
+    width: 100%;
+}
+
+.header .container .daun{
+    width: 50%;
+    position: absolute;
+    bottom: 200px;
+    right: -180px;
+}
+
+.header .container .daun img{
+    width: 100%;
+}
+
+
+.header .container .gambar3{
+    width: 60%;
+    position: absolute;
+    bottom: -170px;
+    right: -250px;
+    transform: rotate(40deg);
+}
+
+.header .container .gambar3 img{
+    width: 100%;
+}
+
+.header .container .gambar4{
+    width: 80%;
+    position: absolute;
+    bottom: -120px;
+    left: -360px;
+    transform: rotate(140deg);
+}
+
+.header .container .gambar4 img{
+    width: 100%;
+}
+
+.astu{
+    position: relative;
+}
+
+.astu .container .gambar{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.astu .container .baru{
+   position: absolute;
+   width: 50%;
+   top: 10%;
+   left: -150px;
+   transform: rotate(180deg);
+}
+
+.astu .container .baru img{
+width: 100%;
+}
+
+.astu .container .baru2{
+    position: absolute;
+    width: 50%;
+    top: 12%;
+    right: -150px;
+ }
+ 
+ .astu .container .baru2 img{
+    width: 100%;
+ }
+
+
+ .astu .container .baru3{
+    position: absolute;
+    width: 50%;
+    bottom: 30px;
+    left: -150px;
+    transform: rotate(180deg);
+ }
+ 
+ .astu .container .baru3 img{
+    width: 100%;
+ }
+
+
+ .astu .container .baru4{
+    position: absolute;
+    width: 50%;
+    bottom: 30px;
+    right: -150px;
+ }
+
+ .astu .container .baru5{
+    position: absolute;
+    width: 50%;
+    bottom: 600px;
+    left: -70px;
+ }
+ 
+ .astu .container .baru5 img{
+    width: 100%;
+ }
+ 
+ .astu .container .baru6{
+    position: absolute;
+    width: 50%;
+    bottom: 540px;
+    right: -110px;
+    transform: rotate(150deg);
+ }
+ 
+ .astu .container .baru6 img{
+    width: 100%;
+ }
+
+ .astu .container .baru4 img{
+    width: 100%;
+ }
+
+.astu .container .gambar img{
+    width: 100%;
+}
+
+.astu .container .tulisan{
+    margin: 10px auto;
+}
+
+.astu .container .tulisan p{
+    font-family: var(--font-standart);
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.astu .container .profile{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.astu .container .profile img{
+    width: 100%;
+}
+
+.astu .container .biodata{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.astu .container .biodata h1{
+    font-family: var(--font-hias);
+    font-weight: var(--font-bold);
+    font-size: 2.5em;
+    letter-spacing: 5px;
+}
+
+.astu .container .biodata p{
+    font-family: var(--font-hias-2);
+    font-weight: var(--font-semi-bold);
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.astu .container .judul{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.astu .container .judul h1{
+    font-family: var(--font-hias-2);
+    font-size: 2.5em;
+    letter-spacing: 8px;
+}
+
+
+.acara{
+    padding: 20px 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+
+.acara .container{
+text-align: center;
+}
+
+.acara .container .gambar{
+    width: 50%;
+    position: absolute;
+    left: -120px;
+    transform: rotate(-20deg);
+    top: -120px;
+    z-index: 9999;
+}
+
+.acara .container .gambar img{
+    width: 100%;
+}
+
+.acara .fa-calendar-alt , .acara .fa-map-marked-alt{
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.acara .container .gambarbiru{
+    width: 50%;
+    position: absolute;
+     right: -120px;
+     transform: rotate(-180deg);
+    top: -50px;
+    z-index: 9999;
+}
+
+.acara .container .gambarbiru img{
+    width: 100%;
+}
+
+.acara .container .gambar2{
+    width: 70%;
+    position: absolute;
+    right: -200px;
+    top: 170px;
+    z-index: 9999;
+}
+
+.acara .container .gambar2 img{
+    width: 100%;
+}
+
+.acara .container .gambar3{
+    width: 70%;
+    position: absolute;
+    left: -200px;
+    top: 120px;
+    transform: rotate(-180deg);
+    z-index: 9999;
+}
+
+.acara .container .gambar3 img{
+    width: 100%;
+}
+
+.acara .container .date{
+    width: 500px;
+margin-top: 150px;
+position: relative;
+border: 2px solid var(--border);
+padding: 20px 0;
+}
+
+.acara .container .date .detail hr{
+    width: 100%;
+    border: 1px solid var(--border);
+}
+
+.acara .container .date .detail h1{
+    font-size: 3em;
+    font-family: var(--font-hias-2);
+    box-sizing: border-box;
+    width: 100%;
+    letter-spacing: 6px;
+}
+
+.acara .container .resepsi hr{
+    border: 1px solid var(--border);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.acara .container .resepsi h1{
+    margin: 50px 0 10px 0;
+    font-size: 3em;
+    font-family: var(--font-hias-2);
+    letter-spacing: 6px;
+}
+
+.acara .container .resepsi .fa-calendar-alt{
+    color: var(--border);
+    font-size: 2.5em;
+}
+
+.acara .container .fa-map-marked-alt{
+    color: var(--border);
+    font-size: 2em;
+}
+.acara .container .tangal{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.acara .container .tangal .days , .acara .container .tangal .month{
+    padding: 20px 30px;
+}
+.acara .container .tangal .dated{
+    border-left: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    padding: 20px 40px;
+}
+.acara .container .alamat{
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.acara .container .hours{
+    color: var(--border);
+    margin: 5px;
+}
+
+.acara .container .alamat span p{
+    font-family: var(--font-hias-2);
+    font-size: 2em;
+    font-weight: var(--font-bold);
+    letter-spacing: 6px;
+}
+
+.wedding2{
+    padding: 130px 0 0 0;
+    position: relative;
+}
+
+.wedding2 .container{
+    text-align: center;
+}
+
+.wedding2 .container .judul{
+    margin: 10px 0;
+}
+
+.wedding2 .container .judul h1{
+    font-family: var(--font-hias-2);
+    font-size: 3.5em;
+    letter-spacing: 6px;
+}
+
+.wedding2 .container .gambarwed{
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.wedding2 .container .gambarwed img{
+    width: 100%;
+    height: 100%;
+}
+
+.wedding2 .container .tulisanwed h1{
+    font-family: var(--font-hias-2);
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+.wedding2 .container .tulisanwed .gambarwedding{
+    top: -100px;
+    position: absolute;
+    left: -130px;
+    width: 60%;
+}
+
+.wedding2 .container .tulisanwed .gambarwedding img{
+    width: 100%;
+}
+
+
+.wedding2 .container .tulisanwed .gambarwedding2{
+    top: -80px;
+    position: absolute;
+    right: -130px;
+    transform: rotate(-100deg);
+    width: 60%;
+}
+
+.wedding2 .container .tulisanwed .gambarwedding2 img{
+    width: 100%;
+}
+.wedding2 .container .tulisanwed{
+    position: relative;
+}
+
+.wedding2 .container .tulisanwed hr{
+    border: 1px solid var(--border);
+    margin: 5px 0;
+}
+
+.wedding2 .container .tulisanwed .lokasi p{
+    font-family: var(--font-hias-2);
+    font-size: 2.5em;
+    border: 1px solid var(--border);
+    width: 30%;
+    margin: 20px auto;
+    border-radius: 6px;
+    letter-spacing: 4px;
+}
+
+.wedding2 .container .tulisanwed .btn a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 35px;
+    background-color: var(--border);
+    border-radius: 6px;
+    font-family: var(--font-hias-2);
+    font-size: 2em;
+    border: 1px solid var(--border);
+    transition: 1s ease all;
+}
+
+.wedding2 .container .tulisanwed .btn a:hover{
+background: none;
+color: var(--border);
+}
+
+.wedding2 .container .maps{
+    margin: 30px 0;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.wedding2 .container .have{
+    margin: 30px 0;
+}
+
+.wedding2 .container .have .judul h1{
+    font-family: var(--font-biasa);
+    font-size: 2em;
+    color: var(--border);
+}
+
+
+.wedding2 .container .box .kotak{
+    border: 1px solid var(--border);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.wedding2 .container .box p{
+    color: var(--border);
+}
+.wedding2 .container .have .box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.galery{
+    padding: 30px 0 30px 0;
+}
+
+.galery .container{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.galery .container h1{
+    font-family: var(--font-hias-2);
+    font-size: 3em;
+    letter-spacing: 3px;
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+
+.galery .container .subgaleri{
+    width:170px;
+    cursor: pointer;
+}
+
+.galery .container .subgaleri img{
+    width: 100%;
+}
+
+.galery .container .btn-galery{
+    margin: 20px 0;
+}
+
+.galery .container .btn-galery a{
+    color: var(--white);
+    background-color: var(--border);
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+.galery .container .potohilang{
+    margin: 40px 0;
+   display: none;
+   transition: 1s ease all;
+}
+
+.galery .container .potohilang.ada{
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition: 1s ease all;
+}
+
+.galery .container .potohilang .hilang{
+    width: 250px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: 1s ease all;
+}
+
+.galery .container .potohilang .hilang.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.galery .container .potohilang .hilang img{
+    width: 100%;
+}
+
+
+.mutiara{
+margin-top: 30px;
+position: relative;
+}
+
+.mutiara .container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mutiara .container h1{
+    font-family: var(--font-hias-2);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.mutiara .container .atas{
+    margin-bottom: 20px;
+}
+
+
+.mutiara .container .tengah{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.mutiara .container .bawah{
+text-align: right;
+font-size: 1.5em;
+}
+
+.mutiara .bungaakhir{
+    position: absolute;
+    width: 50%;
+    top: -240px;
+    left: -170px;
+    transform: rotate(-25deg);
+}
+
+.mutiara .bungaakhir img{
+    width: 100%;
+}
+
+.mutiara .bungaakhir2{
+    position: absolute;
+    width: 50%;
+    bottom: -230px;
+    right: -120px;
+    z-index: 9999;
+    transform: rotate(-70deg);
+}
+
+.mutiara .bungaakhir2 img{
+    width: 100%;
+}
+
+.hadir{
+    padding: 170px 0;
+    height: 60vh;
+    position: relative;
+}
+
+.hadir .container{
+    text-align: center;
+}
+
+.hadir .container h1{
+    font-family: var(--font-hias-2);
+    font-size: 2.5em;
+    letter-spacing: 5px;
+}
+
+.hadir .container .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.hadir input[type="username"]{
+    border: none;
+    outline: none;
+    border: 2px solid var(--border);
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.hadir textarea{
+    border: none;
+    outline: none;
+    border: 2px solid var(--border);
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+.hadir select{
+    border: none;
+    outline: none;
+    border: 2px solid var(--border);
+    width: 54%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.hadir .btn-hadir a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--border);
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.hadir .gambar-hadir{
+    width: 50%;
+    position: absolute;
+    top: -100px;
+    left: -130px;
+    transform: rotate(180deg);
+}
+
+.hadir .gambar-hadir img{
+    width: 100%;
+}
+
+.hadir .komentar-balas{
+    margin: 40px 0 10px 0;
+}
+
+.hadir .komentar-balas .judul h1{
+    font-family: var(--font-hias-2);
+    letter-spacing: 5px;
+}
+/* style akhir body */
+
+.hadir .akhir {
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+
+.hadir .penganten{
+    margin: 40px 0;
+    letter-spacing: 5px;
+}
+
+.footer{
+    margin-bottom: 120px;
+    background-color: var(--border);
+ }
+ 
+ .footer .container{
+     text-align: center;
+ }
+ 
+ .footer .container h1{
+     color: var(--white);
+     font-family: var(--font-hias-2);
+     padding:10px 0;
+     letter-spacing: 3px;
+ }
+ 
+ .footer .container .box{
+     display: flex;
+     justify-content: space-evenly;
+     width: 50%;
+     margin: 0 auto;
+     flex-wrap: wrap;
+     color: #fff;
+ }
+ 
+ .footer .container p{
+     color: var(--white);
+     padding-bottom: 20px;
+ }
+ 
+ .footer .container .wa{
+     width: 40%;
+ }
+ 
+ .footer .fa-whatsapp , .footer .fa-instagram , .footer .fa-youtube , .footer .fa-facebook{
+     font-size: 2em;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+ 
+ .footer .fa-whatsapp:hover , .footer .fa-instagram:hover , .footer .fa-youtube:hover , .footer .fa-facebook:hover{
+     transform: scale(1.3);
+ }
+ 
+ .footer .container .ig{
+     width: 40%;
+ }
+ 
+ .footer .container .yt{
+     width: 40%;
+ }
+ 
+ .footer .container .fb{
+     width: 40%;
+ }
+ 
+
+
+
+/* styling javascript */
+ .gambar1{
+    opacity: 0;
+    transition: 1s ease all;
+    transform: translate(100px , 0);
+}
+ .gambar1.k1{
+    opacity: 1;
+    transform: translate(0,0);
+}
+ .gambar2{
+    opacity: 0;
+    transition: 1s ease all;
+    transform: translate(-100px , 0);
+}
+  .gambar2.k2{
+    opacity: 1;
+    transform: translate(0,0);
+}
+ .border{
+    opacity: 0;
+    transition: 5s ease all;
+    transform: scale(0)
+}
+ .border.k3{
+    opacity: 1;
+    transform: scale(1)
+}
+
+.daun{
+    opacity: 0;
+    transition: 1s ease all;
+    transform: translate(100px , 0);
+}
+ .daun.k4{
+    opacity: 1;
+    transform: translate(0 , 0);
+}
+
+.gambar3{
+    opacity: 0;
+    transition: 2s ease all;
+    transform: translate(100px , 0);
+}
+ .gambar3.k5{
+    opacity: 1;
+    transform: translate(0 , 0);
+}
+
+.gambar4{
+    opacity: 0;
+    transition: 2s ease all;
+    transform: translate(-100px , 0);
+}
+ .gambar4.k6{
+    opacity: 1;
+    transform: translate(0 , 0);
+}
+
+/* akhir styling javascript */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* kelas background depan */
+.depan{
+    position: fixed;
+    z-index: 9999999999999999;
+    transform: translate(0,0);
+    transition: 3s ease all;
+}
+
+.depan .container{
+    position: relative;
+}
+
+.depan .container .gambar-depan{
+    width: 100vmax;
+    height: 100vh;
+    position: relative;
+}
+
+.depan .container .gambar-depan::after{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    content: '';
+}
+.depan .container .gambar-depan img{
+    width: 100%;
+    height: 100%;
+}
+
+.depan .container .box{
+    display: flex;
+    justify-content: center;
+}
+
+.depan .container .tulisan-depan{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+}
+
+.depan .container .tulisan-depan h1{
+color: #fff;
+font-size: 3.5em;
+font-family: var(--font-hias);
+letter-spacing: 5px;
+}
+
+.depan .container .tulisan-depan .judul-depan p{
+    color: #fff;
+    margin-top: -10px;
+    font-size: 1.3em;
+}
+
+.depan .container .tulisan-depan h2{
+    color: #fff;
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-family: var(--font-hias-2);
+    letter-spacing: 3px;
+}
+
+.depan .container .tulisan-depan .salah p{
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.depan .container .tulisan-depan .btn-depan{
+    margin: 20px 0;
+}
+
+.depan .container .tulisan-depan .btn-depan a{
+    color: #fff;
+    background-color: var(--border);
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.music{
+   display: none;
+}
+
+.depan.hide{
+    transform: translate(-100%,0);
+}
+
+/* akhir kelas background depan */
+
+
+/* kelas covid */
+
+.covid{
+    padding: 20px;
+    background-color: var(--border);
+    z-index: 99999999999;
+    position: fixed;
+    display: none;
+    transform: translate(-100%,0);
+    height: 100vh;
+    transition: 3s ease all;
+}
+
+.covid.corona{
+    display:block;
+    transform: translate(0,0);
+}
+
+.covid .container-boxer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.covid .container{
+text-align: center;
+}
+.covid .container .karena{
+    padding-bottom: 20px;
+}
+
+.covid .container p{
+    color: var(--white);
+
+}
+.covid .container .box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.covid .bungkus{
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(255,255,255,.3);
+    width: 170px;
+    padding:10px 0 ;
+}
+
+.covid .icon{
+    padding-bottom: 10px;
+    width: 75px;
+    margin: 0 auto;
+    height: 75px;
+
+}
+.covid .fa-hands-wash , .covid .fa-head-side-mask ,  .covid .fa-people-arrows , .covid .fa-handshake , .covid .fa-users , .fa-pump-medical{
+    font-size: 3em;
+    height: 75px;
+    color: #fff;
+}
+
+.covid .btn-covid{
+    margin: 30px 0;
+}
+
+.covid .btn-covid a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 35px;
+    box-shadow: 0 4px 16px rgba(255,255,255,.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.covid.corona.kiri{
+    display: none;
+}
+
+
+
+/* akhir kelas covid */
+
+/* awal media screen 550px */
+@media screen and (max-width:550px){
+    .header .container .gambar1{
+        width: 60%;
+        position: absolute;
+        top: -30px;
+        right: -90px;
+        transform: rotate(80deg);
+    }
+    
+    .header .container .gambar1 img{
+        width: 100%;
+    }
+    
+    .header .container .gambar2{
+        width: 60%;
+        position: absolute;
+        top: -57px;
+        left: -57px;
+    }
+    
+    .header .container .gambar2 img{
+        width: 100%;
+    }
+    
+    .header .container .border{
+       width: 70%;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+    }
+    
+    .header .container .border img{
+        width: 100%;
+    }
+    
+    .header .container .daun{
+        width: 60%;
+        position: absolute;
+        bottom: 200px;
+        right: -180px;
+    }
+    
+    .header .container .daun img{
+        width: 100%;
+    }
+    
+    
+    .header .container .gambar3{
+        width: 60%;
+        position: absolute;
+        bottom: -80px;
+        right: -200px;
+        transform: rotate(40deg);
+    }
+    
+    .header .container .gambar3 img{
+        width: 100%;
+    }
+    
+    .header .container .gambar4{
+        width: 70%;
+        position: absolute;
+        bottom: -50px;
+        left: -240px;
+        transform: rotate(140deg);
+    }
+    
+    .header .container .gambar4 img{
+        width: 100%;
+    }
+
+    .astu .container .baru{
+        position: absolute;
+        width: 50%;
+        top: 10%;
+        left: -110px;
+        transform: rotate(180deg);
+     }
+     
+     .astu .container .baru img{
+     width: 100%;
+     }
+     
+     .astu .container .baru2{
+         position: absolute;
+         width: 50%;
+         top: 12%;
+         right: -110px;
+      }
+      
+      .astu .container .baru2 img{
+         width: 100%;
+      }
+     
+     
+      .astu .container .baru3{
+         position: absolute;
+         width: 50%;
+         bottom: 30px;
+         left: -110px;
+         transform: rotate(180deg);
+      }
+      
+      .astu .container .baru3 img{
+         width: 100%;
+      }
+     
+     
+      .astu .container .baru4{
+         position: absolute;
+         width: 50%;
+         bottom: 30px;
+         right: -110px;
+      }
+     
+      .astu .container .baru5{
+         position: absolute;
+         width: 50%;
+         bottom: 600px;
+         left: -70px;
+      }
+      
+      .astu .container .baru5 img{
+         width: 100%;
+      }
+      
+      .astu .container .baru6{
+         position: absolute;
+         width: 50%;
+         bottom: 540px;
+         right: -110px;
+         transform: rotate(150deg);
+      }
+      
+      .astu .container .baru6 img{
+         width: 100%;
+      }
+     
+      .astu .container .baru4 img{
+         width: 100%;
+      }
+     
+     .astu .container .gambar img{
+         width: 100%;
+     }
+
+     .astu .container .tulisan p{
+        font-family: var(--font-standart);
+        text-align: center;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+    
+    .astu .container .biodata{
+        width: 100%;
+    }
+    .astu .container .profile{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .astu .container .biodata h1{
+        font-size: 2em;
+    }
+     
+    .astu .container .profile{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .astu .container .profile img{
+        width: 100%;
+    }
+
+    .acara .container .date{
+        width: 400px;
+    margin-top: 150px;
+    position: relative;
+    border: 2px solid var(--border);
+    padding: 20px 0;
+    }
+    
+    .acara .container .date .detail hr{
+        width: 100%;
+        border: 1px solid var(--border);
+    }
+    
+    .acara .container .date .detail h1{
+        font-size: 3em;
+        font-family: var(--font-hias-2);
+        box-sizing: border-box;
+        width: 100%;
+        letter-spacing: 6px;
+    }
+    
+    .acara .container .resepsi hr{
+        border: 1px solid var(--border);
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .acara .container .resepsi h1{
+        margin: 50px 0 10px 0;
+        font-size: 2.5em;
+        font-family: var(--font-hias-2);
+        letter-spacing: 6px;
+    }
+    
+    .wedding2 .container .gambarwed{
+        width: 80%;
+        margin: 0 auto;
+        height: 350px;
+    }
+    
+    .wedding2 .container .gambarwed img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wedding2 .container .tulisanwed h1{
+        font-family: var(--font-hias-2);
+        font-size: 2.5em;
+        letter-spacing: 3px;
+    }
+    
+    .wedding2 .container .have{
+        margin: 30px 0;
+    }
+    
+    .wedding2 .container .have .judul h1{
+        font-family: var(--font-biasa);
+        font-size: 1.2em;
+        color: var(--border);
+    }
+
+    .wedding2 .container .mapss{
+        width: 100%;
+    }
+    
+    .wedding2 .container .maps{
+        margin: 0 auto;
+        width: 430px;
+
+    }
+
+    .depan .container .gambar-depan{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .depan .container .gambar-depan img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .depan .container .box{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .depan .container .tulisan-depan h1{
+    color: #fff;
+    font-size: 2.5em;
+    font-family: var(--font-hias);
+    letter-spacing: 5px;
+    }
+    
+    .depan .container .tulisan-depan .judul-depan p{
+        color: #fff;
+        margin-top: -10px;
+        font-size: 1.3em;
+    }
+
+    .covid .container .box{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .covid .bungkus{
+        margin-bottom: 20px;
+        box-shadow: 0 4px 16px rgba(255,255,255,.3);
+        width: 130px;
+        padding:10px 0 ;
+    }
+    
+    .covid .icon{
+        padding-bottom: 10px;
+        width: 50px;
+        margin: 0 auto;
+        height: 30px;
+    
+    }
+
+    .covid .bungkus p{
+        font-size: 0.9em;
+    }
+    .covid .fa-hands-wash , .covid .fa-head-side-mask ,  .covid .fa-people-arrows , .covid .fa-handshake , .covid .fa-users , .fa-pump-medical{
+        font-size: 3.5em;
+        height: 30px;
+        color: #fff;
+    }
+    
+    .covid .btn-covid{
+        margin: 30px 0;
+    }
+    
+    .covid .btn-covid a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 35px;
+        box-shadow: 0 4px 16px rgba(255,255,255,.3);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    
+}
+/* akhir media screen 500px */
+
+/* media 450px */
+
+@media screen and (max-width:450px){
+    .header .container .gambar1{
+        width: 70%;
+        position: absolute;
+        top: -30px;
+        right: -90px;
+        transform: rotate(80deg);
+    }
+    
+    .header .container .gambar1 img{
+        width: 100%;
+    }
+    
+    .header .container .gambar2{
+        width: 70%;
+        position: absolute;
+        top: -57px;
+        left: -57px;
+    }
+    
+    .header .container .gambar2 img{
+        width: 100%;
+    }
+    
+    .header .container .border{
+       width: 70%;
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+    }
+    
+    .header .container .border img{
+        width: 100%;
+    }
+    
+    .header .container .daun{
+        width: 70%;
+        position: absolute;
+        bottom: 250px;
+        right: -180px;
+    }
+    
+    .header .container .daun img{
+        width: 100%;
+    }
+    
+    .header .container .gambar3{
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        right: -180px;
+        transform: rotate(40deg);
+    }
+    
+    .header .container .gambar3 img{
+        width: 100%;
+    }
+    
+    .header .container .gambar4{
+        width: 70%;
+        position: absolute;
+        bottom: 20px;
+        left: -190px;
+        transform: rotate(140deg);
+    }
+    
+    .header .container .gambar4 img{
+        width: 100%;
+    }
+
+    .astu .container .baru{
+        position: absolute;
+        width: 60%;
+        top: 10%;
+        left: -100px;
+        transform: rotate(180deg);
+     }
+     
+     .astu .container .baru img{
+     width: 100%;
+     }
+     
+     .astu .container .baru2{
+         position: absolute;
+         width: 60%;
+         top: 12%;
+         right: -100px;
+      }
+      
+      .astu .container .baru2 img{
+         width: 100%;
+      }
+     
+     
+      .astu .container .baru3{
+         position: absolute;
+         width: 60%;
+         bottom: 30px;
+         left: -100px;
+         transform: rotate(180deg);
+      }
+      
+      .astu .container .baru3 img{
+         width: 100%;
+      }
+     
+     
+      .astu .container .baru4{
+         position: absolute;
+         width: 60%;
+         bottom: 30px;
+         right: -100px;
+      }
+     
+      .astu .container .baru5{
+         position: absolute;
+         width:50%;
+         bottom: 600px;
+         left: -70px;
+      }
+      
+      .astu .container .baru5 img{
+         width: 100%;
+      }
+      
+      .astu .container .baru6{
+         position: absolute;
+         width: 60%;
+         bottom: 540px;
+         right: -110px;
+         transform: rotate(150deg);
+      }
+      
+      .astu .container .baru6 img{
+         width: 100%;
+      }
+     
+      .astu .container .baru4 img{
+         width: 100%;
+      }
+     
+     .astu .container .gambar img{
+         width: 100%;
+     }
+
+     .astu .container .tulisan p{
+        font-family: var(--font-standart);
+        text-align: center;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+    }
+    
+    .astu .container .biodata{
+        width: 100%;
+    }
+    .astu .container .profile{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .astu .container .biodata h1{
+        font-size: 2em;
+
+    }
+     
+    .astu .container .profile{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .astu .container .profile img{
+        width: 100%;
+    }
+
+    .acara .container .date{
+     width: 300px;
+    margin-top: 150px;
+    position: relative;
+    border: 2px solid var(--border);
+    padding: 20px 0;
+    }
+    
+    .acara .container .date .detail hr{
+        width: 100%;
+        border: 1px solid var(--border);
+    }
+    
+    .acara .container .date .detail h1{
+        font-size: 2.5em;
+        font-family: var(--font-hias-2);
+        box-sizing: border-box;
+        width: 100%;
+        letter-spacing: 6px;
+    }
+    
+    .acara .container .resepsi hr{
+        border: 1px solid var(--border);
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .acara .container .tangal .days , .acara .container .tangal .month{
+        padding: 10px 10px;
+    }
+    .acara .container .tangal .dated{
+        border-left: 2px solid var(--border);
+        border-right: 2px solid var(--border);
+        padding: 10px 30px;
+    }
+    .acara .container .alamat{
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+    
+    .acara .container .hours{
+        color: var(--border);
+        margin: 5px;
+    }
+    
+    .acara .container .alamat span p{
+        font-family: var(--font-hias-2);
+        font-size: 2em;
+        font-weight: var(--font-bold);
+        letter-spacing: 6px;
+    }
+    
+    
+    .acara .container .resepsi h1{
+        margin: 50px 0 10px 0;
+        font-size: 2.5em;
+        font-family: var(--font-hias-2);
+        letter-spacing: 2px;
+    }
+    
+    .acara .container .gambar{
+        width: 50%;
+        position: absolute;
+        left: -40px;
+        transform: rotate(-20deg);
+        top: -70px;
+        z-index: 9999;
+    }
+    
+    .acara .container .gambar img{
+        width: 100%;
+    }
+    
+    .acara .fa-calendar-alt , .acara .fa-map-marked-alt{
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    .acara .container .gambarbiru{
+        width: 50%;
+        position: absolute;
+         right: -50px;
+         transform: rotate(-180deg);
+        top: -30px;
+        z-index: 9999;
+    }
+    
+    .acara .container .gambarbiru img{
+        width: 100%;
+    }
+    
+    .acara .container .gambar2{
+        width: 70%;
+        position: absolute;
+        right: -110px;
+        top: 170px;
+        z-index: 9999;
+    }
+    
+    .acara .container .gambar2 img{
+        width: 100%;
+    }
+    
+    .acara .container .gambar3{
+        width: 70%;
+        position: absolute;
+        left: -100px;
+        top: 170px;
+        transform: rotate(-180deg);
+        z-index: 9999;
+    }
+    
+    .acara .container .gambar3 img{
+        width: 100%;
+    }
+
+    .wedding2 .container .gambarwed{
+        width: 80%;
+        margin: 0 auto;
+        height: 350px;
+    }
+    
+    .wedding2 .container .gambarwed img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wedding2 .container .have{
+        margin: 30px 0;
+    }
+
+    .wedding2 .container .judul h1{
+        font-size: 2.5em;
+    }
+    
+    .wedding2 .container .have .judul h1{
+        font-family: var(--font-biasa);
+        font-size: 1em;
+        color: var(--border);
+    }
+
+    .wedding2 .container .mapss{
+        width: 100%;
+    }
+    
+    .wedding2 .container .maps{
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    .wedding2 .container .tulisanwed .lokasi p{
+        font-family: var(--font-hias-2);
+        font-size: 1.5em;
+        border: 1px solid var(--border);
+        width: 30%;
+        margin: 20px auto;
+        border-radius: 6px;
+        letter-spacing: 4px;
+    }
+
+    .mutiara .container{
+        width: 100%;
+        margin: -40px auto;
+    }
+    
+    .mutiara .container h1{
+        font-family: var(--font-hias-2);
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    
+    .mutiara .container .bawah{
+    text-align: right;
+    font-size: 1.5em;
+    margin-bottom: 120px;
+    }
+
+    .mutiara .bungaakhir{
+        position: absolute;
+        width: 50%;
+        top: -170px;
+        left: -60px;
+        transform: rotate(-25deg);
+    }
+    
+    .mutiara .bungaakhir img{
+        width: 100%;
+    }
+    .mutiara .bungaakhir2{
+        position: absolute;
+        width: 50%;
+        bottom: -110px;
+        right: -70px;
+        z-index: 9999;
+        transform: rotate(-70deg);
+    }
+    
+    .mutiara .bungaakhir2 img{
+        width: 100%;
+    }
+
+    .hadir .container h1{
+        font-family: var(--font-hias-2);
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+    .hadir input[type="username"]{
+        border: none;
+        outline: none;
+        border: 2px solid var(--border);
+        width: 80%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .hadir textarea{
+        border: none;
+        outline: none;
+        border: 2px solid var(--border);
+        width: 80%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 80px;
+    }
+    
+    .hadir select{
+        border: none;
+        outline: none;
+        border: 2px solid var(--border);
+        width: 88%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .hadir .gambar-hadir{
+        width: 60%;
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        transform: rotate(180deg);
+    }
+    
+    .hadir .gambar-hadir img{
+        width: 100%;
+    }
+    
+    .footer .container .box{
+         display: flex;
+         justify-content: space-evenly;
+         width: 100%;
+         margin: 0 auto;
+         flex-wrap: wrap;
+         color: #fff;
+     }
+
+     .depan .container .gambar-depan{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .depan .container .gambar-depan img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .depan .container .box{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .depan .container .tulisan-depan h1{
+    color: #fff;
+    font-size: 2.5em;
+    font-family: var(--font-hias);
+    letter-spacing: 5px;
+    }
+    
+    .depan .container .tulisan-depan .judul-depan p{
+        color: #fff;
+        margin-top: -10px;
+        font-size: 1.3em;
+    }
+    
+    .depan .container .tulisan-depan h2{
+        color: #fff;
+        margin: 20px 0;
+        font-size: 2.5em;
+        font-family: var(--font-hias-2);
+        letter-spacing: 3px;
+    }
+    
+    .depan .container .tulisan-depan .salah p{
+        color: #fff;
+        font-size: 1.3em;
+    }
+    
+    .depan .container .tulisan-depan .btn-depan{
+        margin: 20px 0;
+    }
+    
+    .depan .container .tulisan-depan .btn-depan a{
+        color: #fff;
+        background-color: var(--border);
+        padding: 5px 25px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+    .covid .container .box{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .covid .bungkus{
+        margin-bottom: 20px;
+        box-shadow: 0 4px 16px rgba(255,255,255,.3);
+        width: 90px;
+        padding:10px 0 ;
+    }
+    
+    .covid .icon{
+        padding-bottom: 10px;
+        width: 50px;
+        margin: 0 auto;
+        height: 30px;
+    
+    }
+
+    .covid .bungkus p{
+        font-size: 0.6em;
+    }
+    .covid .fa-hands-wash , .covid .fa-head-side-mask ,  .covid .fa-people-arrows , .covid .fa-handshake , .covid .fa-users , .fa-pump-medical{
+        font-size: 2.5em;
+        height: 30px;
+        color: #fff;
+    }
+    
+    .covid .btn-covid{
+        margin: 30px 0;
+    }
+    
+    .covid .btn-covid a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 35px;
+        box-shadow: 0 4px 16px rgba(255,255,255,.3);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    
+}
+
+/* akhir media 400px */
